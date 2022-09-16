@@ -3,7 +3,6 @@ import torch.nn as nn
 
 
 class Model(nn.Module):
-
     def __init__(self, input_size, hidden_size, output_size, num_quantiles):
         super(Model, self).__init__()
 
