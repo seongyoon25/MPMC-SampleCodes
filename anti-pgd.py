@@ -29,6 +29,7 @@ class AntiPGD:
     Orvieto, A., Kersting, H., Proske, F., Bach, F., & Lucchi, A. (2022).
     Anticorrelated noise injection for improved generalization.
     arXiv preprint arXiv:2202.02831.
+    (https://arxiv.org/abs/2202.02831)
     """
     def __init__(self, model):
         super(AntiPGD, self).__init__()
