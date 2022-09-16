@@ -2,7 +2,7 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-
+import time
 import torch
 import torch.nn as nn
 # import torch.nn.functional as F
@@ -105,6 +105,7 @@ loss_array_test = []
 patience = 0
 patience_thresh = 1000
 min_loss = np.inf
+time_init = time.time()
 for e in range(num_epoch):
 
     model.train()  # training mode
@@ -138,7 +139,7 @@ for e in range(num_epoch):
         loss_array_test.append(np.mean(loss_array_tmp))
 
     if e % 100 == 0:
-        print('Epoch: {}, Train loss: {:.4e}, Test  loss: {:4e}'.format(e, loss_array_train[-1], loss_array_test[-1]))
+        print('Epoch: {}, Train loss: {:.4e}, Test  loss: {:4e}, Total time:{:.1f}s'.format(e, loss_array_train[-1], loss_array_test[-1], time.time() - time_init))
 
     # update the minimum loss
     if min_loss > loss_array_train[-1]:
