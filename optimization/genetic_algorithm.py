@@ -23,10 +23,15 @@ def on_generation(ga):
     print('Generation {} | Max fitness {:.4f}'.format(ga.generations_completed, max(ga.best_solutions_fitness)))
 
 
+def fitness_func(solution, solution_idx):
+    fitness = fitness_function(*solution)
+    return fitness
+
+
 # set GA parameters
 ga_instance = pygad.GA(num_generations=1000,
                        num_parents_mating=2,
-                       fitness_func=fitness_function,
+                       fitness_func=fitness_func,
                        num_genes=len(gene_space),
                        sol_per_pop=10*len(gene_space),
                        mutation_percent_genes=10,
