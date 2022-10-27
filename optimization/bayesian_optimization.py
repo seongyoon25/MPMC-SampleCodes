@@ -1,10 +1,3 @@
-import pybamm
-import pandas as pd
-import os
-import numpy as np
-from scipy import interpolate
-import matplotlib.pyplot as plt
-
 from bayes_opt import BayesianOptimization
 from bayes_opt.logger import JSONLogger
 from bayes_opt.util import load_logs
