@@ -3,8 +3,14 @@ import pygad
 
 # funtion that returns a score (the higher, the better)
 # this is an example for three parameters
-def fitness_function(x0, x1, x2):
-    fitness = ...
+def score_function(x0, x1, x2):
+    score = ...
+    return score
+
+
+# ga function in pygad allows only two arguments: `solution`, `solution_idx`
+def fitness_func(solution, solution_idx):
+    fitness = score_function(*solution)
     return fitness
 
 
@@ -21,11 +27,6 @@ for par in pbounds.keys():
 
 def on_generation(ga):
     print('Generation {} | Max fitness {:.4f}'.format(ga.generations_completed, max(ga.best_solutions_fitness)))
-
-
-def fitness_func(solution, solution_idx):
-    fitness = fitness_function(*solution)
-    return fitness
 
 
 # set GA parameters
