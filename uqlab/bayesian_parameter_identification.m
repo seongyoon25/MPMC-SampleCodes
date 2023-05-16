@@ -1,3 +1,24 @@
+%{
+    File Name: bayesian_parameter_identification.m
+    Author: Seongyoon Kim (seongyoonk25@gmail.com)
+    Date: 2023-05-16
+    Description:
+    This script demonstrates how to use UQLab to perform a Bayesian parameter
+    identification for a given model. The main steps are as follows:
+    1. Initialization and adding UQ Lab to path
+    2. Setting reference parameters and getting reference model outputs
+    3. UQ Lab input setting (prior distribution)
+    4. UQ Lab forward model setting
+    5. UQ Lab observation setting
+    6. UQ Lab discrepancy setting (model/observation error)
+    7. UQ Lab solver setting (MCMC sampler)
+    8. UQ Lab inversion setting
+    9. Running UQ Lab Bayesian parameter identification
+   10. Printing and plotting the results
+   11. Post-processing: removing bad chains and getting maximum a posteriori (MAP)
+   12. Post-processing: getting samples and corresponding model outputs
+%}
+
 %% Initialization
 clear all;
 close all;

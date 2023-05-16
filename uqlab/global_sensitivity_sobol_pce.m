@@ -1,3 +1,19 @@
+%{
+    File Name: global_sensitivity_sobol_pce.m
+    Author: Seongyoon Kim (seongyoonk25@gmail.com)
+    Date: 2023-05-16
+    Description:
+    This script demonstrates how to use UQLab to perform 
+    a polynomial chaos expansion (PCE)-based global sensitivity analysis.
+    It includes the following steps:
+    1. Initialization and adding UQ Lab to path
+    2. Setting reference parameters
+    3. UQ Lab input setting
+    4. UQ Lab polynomial chaos expansion (PCE) setting
+    5. UQ Lab global sensitivity analysis (GSA) setting and run
+    6. Plotting the results
+%}
+
 %% Initialization
 clear all;
 close all;
