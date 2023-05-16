@@ -1,3 +1,22 @@
+"""
+bayesian_optimization.py
+
+Author: Seongyoon Kim (seongyoonk25@gmail.com)
+Date: 2023-05-16
+
+This script provides a basic implementation of Bayesian optimization using the bayes_opt library. 
+It includes:
+
+1. Definition of a fitness function for evaluating candidate solutions.
+2. Configuration of parameter bounds for Bayesian optimization.
+3. Setting up a logger to record the optimization progress.
+4. Configuration and execution of Bayesian optimization, with options for starting a new run or resuming a previous run.
+5. Display of the best solution and its fitness value.
+
+Please make sure to install the bayes_opt library (pip install bayesian-optimization) before running this script.
+"""
+
+
 from bayes_opt import BayesianOptimization
 from bayes_opt.logger import JSONLogger
 from bayes_opt.util import load_logs

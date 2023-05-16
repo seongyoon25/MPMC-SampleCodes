@@ -1,3 +1,26 @@
+"""
+torch_basic_supervised.py
+
+Author: Seongyoon Kim (seongyoonk25@gmail.com)
+Date: 2023-05-16
+
+This script provides a basic framework for supervised deep learning using PyTorch.
+It includes the following steps:
+
+1. Import required libraries.
+2. Read input data from CSV files.
+3. Calculate mean and standard deviation for input and output data.
+4. Define the model architecture.
+5. Allocate CUDA if available.
+6. Configure hyperparameters and set up data loaders.
+7. Create and train the model.
+8. Plot and evaluate the training and testing results.
+
+Please make sure to install the required libraries and prepare the input CSV files
+before running this script.
+"""
+
+
 # Import libraries
 import numpy as np
 import pandas as pd

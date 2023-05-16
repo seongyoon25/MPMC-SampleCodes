@@ -1,3 +1,23 @@
+"""
+genetic_algorithm.py
+
+Author: Seongyoon Kim (seongyoonk25@gmail.com)
+Date: 2023-05-16
+
+This script provides a basic implementation of a genetic algorithm using the PyGAD library.
+It includes:
+
+1. Definition of a score function for evaluating candidate solutions.
+2. Implementation of the fitness function required by the PyGAD library.
+3. Configuration of the parameter bounds and gene space for the genetic algorithm.
+4. Definition of an on_generation callback function to display progress during optimization.
+5. Configuration and execution of the genetic algorithm using PyGAD.
+6. Display of the best solution and its fitness value.
+
+Please make sure to install the PyGAD library (pip install pygad) before running this script.
+"""
+
+
 import pygad
 
 

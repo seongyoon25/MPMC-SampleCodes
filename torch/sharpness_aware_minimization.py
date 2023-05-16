@@ -1,3 +1,33 @@
+"""
+sharpness_aware_minimization.py
+
+Author: Seongyoon Kim (seongyoonk25@gmail.com)
+Date: 2023-05-16
+
+This script provides a basic implementation of the Sharpness-Aware Minimization (SAM)
+optimizer for efficiently improving generalization in deep learning models. It includes:
+
+1. Definition of a sample model architecture.
+2. Implementation of the SAM optimizer class.
+3. Example usage of the SAM optimizer with a model and a dataset.
+
+The implementation is based on the following papers:
+
+- Foret, P., Kleiner, A., Mobahi, H., & Neyshabur, B. (2020).
+  Sharpness-aware minimization for efficiently improving generalization.
+  arXiv preprint arXiv:2010.01412.
+  (https://arxiv.org/abs/2010.01412)
+
+- Kwon, J., Kim, J., Park, H., & Choi, I. K. (2021, July).
+  Asam: Adaptive sharpness-aware minimization for scale-invariant learning of deep neural networks.
+  In International Conference on Machine Learning (pp. 5905-5914). PMLR.
+  (https://proceedings.mlr.press/v139/kwon21b.html)
+
+Please make sure to install the required libraries and prepare the input dataset
+before running this script.
+"""
+
+
 import torch
 import torch.nn as nn
 import torch.optim as optim

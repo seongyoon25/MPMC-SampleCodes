@@ -1,3 +1,21 @@
+"""
+quantile_loss.py
+
+Author: Seongyoon Kim (seongyoonk25@gmail.com)
+Date: 2023-05-16
+
+This script provides a basic implementation of the Quantile Loss function for generating
+confidence intervals in deep learning models. It includes:
+
+1. Definition of a sample model architecture that outputs multiple quantiles.
+2. Implementation of the QuantileLoss class for calculating quantile loss.
+3. Example usage of the QuantileLoss with a model and a dataset.
+
+Please make sure to install the required libraries and prepare the input dataset
+before running this script.
+"""
+
+
 import torch
 import torch.nn as nn
 

@@ -1,3 +1,21 @@
+"""
+anti-pgd.py
+
+Author: Seongyoon Kim (seongyoonk25@gmail.com)
+Date: 2023-05-16
+
+This script provides a basic implementation of the Anti-correlated Perturbed Gradient
+Descent (Anti-PGD) method for improving generalization in deep learning models. It includes:
+
+1. Definition of a sample model architecture.
+2. Implementation of the AntiPGD class for applying anti-PGD updates to model parameters.
+3. Example usage of the AntiPGD with a model, an optimizer, and a dataset.
+
+Please make sure to install the required libraries and prepare the input dataset
+before running this script.
+"""
+
+
 import torch
 import torch.nn as nn
 import torch.optim as optim
