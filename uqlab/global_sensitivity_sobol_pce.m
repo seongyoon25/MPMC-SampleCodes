@@ -59,10 +59,10 @@ metaOpts.ExpDesign.X = ... %  must be NxP, where N is sample number
 metaOpts.ExpDesign.Y = ... %  must be NxQ, where N is sample number
 
 % Case 2: from Bayesian parameter identification
-dimParameter = ...
-dimOutput = ...
-metaOpts.ExpDesign.X = reshape(permute(myBayesianAnalysis.Results.PostProc.PostSample, [1,3,2]), [], dimParameter);
-metaOpts.ExpDesign.Y = reshape(permute(myBayesianAnalysis.Results.PostProc.PostModel.evaluation, [1,3,2]), [], dimOutput);
+% dimParameter = ...
+% dimOutput = ...
+% metaOpts.ExpDesign.X = reshape(permute(myBayesianAnalysis.Results.PostProc.PostSample, [1,3,2]), [], dimParameter);
+% metaOpts.ExpDesign.Y = reshape(permute(myBayesianAnalysis.Results.PostProc.PostModel.evaluation, [1,3,2]), [], dimOutput);
 
 metaOpts.TruncOptions.qNorm = 0.75;
 metaOpts.Degree = 3;
