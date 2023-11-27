@@ -178,7 +178,7 @@ for e in range(num_epoch):
 
 plt.plot(loss_array_train, label='train loss')
 plt.plot(loss_array_test, label='test loss')
-plt.axvline(x=1000, linestyle='--', color='grey')
+plt.axvline(x=patience_thresh, linestyle='--', color='grey')
 plt.ylabel('loss')
 plt.xlabel('epoch')
 plt.yscale('log')
